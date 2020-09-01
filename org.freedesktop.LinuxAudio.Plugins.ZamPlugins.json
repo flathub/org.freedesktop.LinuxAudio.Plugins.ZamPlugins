@@ -1,11 +1,11 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.ZamPlugins",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
-    "sdk": "org.freedesktop.Sdk//19.08",
-    "runtime-version": "19.08",
+    "sdk": "org.freedesktop.Sdk//20.08",
+    "runtime-version": "20.08",
     "build-extension": true,
     "appstream-compose": false,
-    "branch": "19.08",
+    "branch": "20.08",
     "build-options": {
         "prefix": "/app/extensions/Plugins/ZamPlugins",
         "prepend-pkg-config-path": "/app/extensions/Plugins/ZamPlugins/lib/pkgconfig"
