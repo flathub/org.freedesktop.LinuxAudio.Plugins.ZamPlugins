@@ -42,7 +42,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zamaudio/zam-plugins.git",
-                    "tag": "3.13"
+                    "tag": "3.14"
                 },
                 {
                     "type": "file",
