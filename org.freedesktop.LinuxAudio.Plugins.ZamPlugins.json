@@ -11,7 +11,7 @@
         "prepend-pkg-config-path": "/app/extensions/Plugins/ZamPlugins/lib/pkgconfig"
     },
     "cleanup": [
-        "/bin",
+        "/bin"
     ],
     "modules": [
         "shared-modules/linux-audio/fftw3f-static.json",
