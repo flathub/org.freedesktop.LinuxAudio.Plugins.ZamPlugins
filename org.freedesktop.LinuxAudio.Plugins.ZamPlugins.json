@@ -1,15 +1,18 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.ZamPlugins",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
-    "sdk": "org.freedesktop.Sdk//21.08",
-    "runtime-version": "21.08",
+    "sdk": "org.freedesktop.Sdk//22.08",
+    "runtime-version": "stable",
     "build-extension": true,
     "appstream-compose": false,
-    "branch": "21.08",
+    "branch": "22.08",
     "build-options": {
         "prefix": "/app/extensions/Plugins/ZamPlugins",
         "prepend-pkg-config-path": "/app/extensions/Plugins/ZamPlugins/lib/pkgconfig"
     },
+    "cleanup": [
+        "/bin",
+    ],
     "modules": [
         "shared-modules/linux-audio/fftw3f-static.json",
         {
@@ -33,7 +36,6 @@
                 }
             },
             "post_install": [
-                "ln -sf vst $FLATPAK_DEST/lxvst",
                 "install -Dm644 -t $FLATPAK_DEST/share/licenses/zam-plugins COPYING",
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.ZamPlugins.metainfo.xml",
                 "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.ZamPlugins --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.ZamPlugins"
@@ -42,7 +44,14 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zamaudio/zam-plugins.git",
+                    "disable-submodules": true,
                     "tag": "3.14"
+                },
+                {
+                    "type": "git",
+                    "url": "https://github.com/DISTRHO/DPF",
+                    "commit": "08669d1bc30c6e971fde800eade4ca40104ba8b2",
+                    "dest": "dpf"
                 },
                 {
                     "type": "file",
