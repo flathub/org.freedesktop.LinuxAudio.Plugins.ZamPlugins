@@ -19,16 +19,11 @@
             "name": "zam-plugins",
             "buildsystem": "simple",
             "build-commands": [
-                "make install PREFIX=${FLATPAK_DEST} LIBDIR=. NOOPT=${NOOPT}"
+                "make install PREFIX=${FLATPAK_DEST} LIBDIR=. NOOPT=${NOOPT} -j $FLATPAK_BUILDER_N_JOBS"
             ],
             "build-options": {
                 "arch": {
                     "aarch64": {
-                        "env": {
-                            "NOOPT": "true"
-                        }
-                    },
-                    "arm": {
                         "env": {
                             "NOOPT": "true"
                         }
@@ -45,13 +40,20 @@
                     "type": "git",
                     "url": "https://github.com/zamaudio/zam-plugins.git",
                     "disable-submodules": true,
-                    "tag": "3.14"
+                    "tag": "4.0"
                 },
                 {
                     "type": "git",
-                    "url": "https://github.com/DISTRHO/DPF",
-                    "commit": "08669d1bc30c6e971fde800eade4ca40104ba8b2",
+                    "url": "https://github.com/DISTRHO/DPF.git",
+                    "commit": "aa5c237bfb56ab7b92b9f8ea720b9906da562a4e",
+                    "disable-submodules": true,
                     "dest": "dpf"
+                },
+                {
+                    "type": "archive",
+                    "url": "https://github.com/DISTRHO/pugl/archive/3e03459a5a0b0f118b04e9e0b0a32f42ccd04a5c.zip",
+                    "sha256": "6cf90b4fd7d92243b5a1f3a77041831f8d5c8599556238ffe53ab163fdf82f57",
+                    "dest": "dpf/dgl/src/pugl-upstream"
                 },
                 {
                     "type": "file",
