@@ -5,7 +5,7 @@
     <name>ZamPlugins</name>
     <summary>ZamAudio Plugins LADSPA/LV2/VST</summary>
     <description>
-      <p>ZamAudio LADSPA/LV2/VST plugins:</p>
+      <p>ZamAudio LADSPA/LV2/VST/VST3/CLAP plugins:</p>
       <ul>
         <li>ZaMaximX2: brickwall limiter</li>
         <li>ZamAutoSat: automatic saturation</li>
@@ -27,9 +27,14 @@
     <update_contact>hub_AT_figuiere.net</update_contact>
     <url type="homepage">http://www.zamaudio.com/?p=976</url>
     <releases>
-        <release version="4.0" date="2022-12-14" />
-        <release version="3.14" date="2020-12-20" />
-        <release version="3.13" date="2020-07-18" />
-        <release version="3.12" date="2019-12-15" />
+      <release version="4.1" date="2022-12-21">
+        <description>
+          <p>Added VST3 and CLAP</p>
+        </description>
+      </release>
+      <release version="4.0" date="2022-12-14" />
+      <release version="3.14" date="2020-12-20" />
+      <release version="3.13" date="2020-07-18" />
+      <release version="3.12" date="2019-12-15" />
     </releases>
 </component>
