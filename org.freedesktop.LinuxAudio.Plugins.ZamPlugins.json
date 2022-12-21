@@ -40,7 +40,7 @@
                     "type": "git",
                     "url": "https://github.com/zamaudio/zam-plugins.git",
                     "disable-submodules": true,
-                    "tag": "4.0"
+                    "tag": "4.1"
                 },
                 {
                     "type": "git",
