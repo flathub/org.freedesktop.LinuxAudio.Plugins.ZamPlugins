@@ -40,7 +40,13 @@
                     "type": "git",
                     "url": "https://github.com/zamaudio/zam-plugins.git",
                     "disable-submodules": true,
-                    "tag": "4.1"
+                    "tag": "4.1",
+                    "commit": "04b5019d8a639b85fe80f6ffeca52e4eb6f619c3",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$",
+                        "is-main-source": true
+                    }
                 },
                 {
                     "type": "git",
