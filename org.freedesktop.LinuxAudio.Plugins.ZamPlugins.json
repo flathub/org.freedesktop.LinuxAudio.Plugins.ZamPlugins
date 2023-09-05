@@ -31,8 +31,8 @@
                 }
             },
             "post_install": [
-                "install -Dm644 -t $FLATPAK_DEST/share/licenses/zam-plugins COPYING",
-                "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.ZamPlugins.metainfo.xml",
+                "install -Dm644 COPYING -t $FLATPAK_DEST/share/licenses/zam-plugins",
+                "install -Dm644 org.freedesktop.LinuxAudio.Plugins.ZamPlugins.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo",
                 "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.ZamPlugins --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.ZamPlugins"
             ],
             "sources": [
