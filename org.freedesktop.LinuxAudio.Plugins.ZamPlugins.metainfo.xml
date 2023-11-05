@@ -3,7 +3,7 @@
     <id>org.freedesktop.LinuxAudio.Plugins.ZamPlugins</id>
     <extends>org.freedesktop.LinuxAudio.BaseExtension</extends>
     <name>ZamPlugins</name>
-    <summary>ZamAudio Plugins LADSPA/LV2/VST</summary>
+    <summary>ZamAudio Plugins LADSPA/LV2/VST/VST3/CLAP</summary>
     <description>
       <p>ZamAudio LADSPA/LV2/VST/VST3/CLAP plugins:</p>
       <ul>
@@ -27,6 +27,17 @@
     <update_contact>hub_AT_figuiere.net</update_contact>
     <url type="homepage">http://www.zamaudio.com/?p=976</url>
     <releases>
+      <release version="4.2" date="2023-11-04">
+        <description>
+          <ul>
+            <li>ZamTube: Introduced both sides of 12AX7 valve
+            emulation with tonestack sandwiched between the
+            valves.</li>
+            <li>ZamHeadX2: Fixed bug with wrong array dimensions.</li>
+            <li>Fix VST2 param bug and other improvements.</li>
+          </ul>
+        </description>
+      </release>
       <release version="4.1" date="2022-12-21">
         <description>
           <p>Added VST3 and CLAP</p>
