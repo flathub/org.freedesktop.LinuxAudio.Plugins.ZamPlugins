@@ -39,27 +39,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zamaudio/zam-plugins.git",
-                    "disable-submodules": true,
-                    "tag": "4.1",
-                    "commit": "04b5019d8a639b85fe80f6ffeca52e4eb6f619c3",
+                    "tag": "4.2",
+                    "commit": "19307a52906821ad9549b9e4c1fdbd8b70bd228e",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$",
                         "is-main-source": true
                     }
-                },
-                {
-                    "type": "git",
-                    "url": "https://github.com/DISTRHO/DPF.git",
-                    "commit": "aa5c237bfb56ab7b92b9f8ea720b9906da562a4e",
-                    "disable-submodules": true,
-                    "dest": "dpf"
-                },
-                {
-                    "type": "archive",
-                    "url": "https://github.com/DISTRHO/pugl/archive/3e03459a5a0b0f118b04e9e0b0a32f42ccd04a5c.zip",
-                    "sha256": "6cf90b4fd7d92243b5a1f3a77041831f8d5c8599556238ffe53ab163fdf82f57",
-                    "dest": "dpf/dgl/src/pugl-upstream"
                 },
                 {
                     "type": "file",
