@@ -5,7 +5,8 @@
     <name>ZamPlugins</name>
     <summary>ZamAudio Plugins LADSPA/LV2/VST/VST3/CLAP</summary>
     <description>
-      <p>ZamAudio LADSPA/LV2/VST/VST3/CLAP plugins:</p>
+      <p>ZamAudio is a set of LADSPA/LV2/VST/VST3/CLAP audio
+      plugins:</p>
       <ul>
         <li>ZaMaximX2: brickwall limiter</li>
         <li>ZamAutoSat: automatic saturation</li>
@@ -13,6 +14,7 @@
         <li>ZamEQ2: 2 bands parametric equalizer</li>
         <li>ZamGEQ31: 31 band graphic equalizer</li>
         <li>ZamHeadX2: HRTF acoustic filtering</li>
+        <li>(NEW in 4.3) ZamNoise: noise reduction based on Gnome Wave Cleaner</li>
         <li>ZamPhono: phono filters for restoring vinyl</li>
         <li>ZamGate and ZamGateX2: gate mono and stereo</li>
         <li>ZamTube: distortion effect modeled after tone stacks from guitar amplifiers</li>
@@ -25,9 +27,21 @@
     <project_license>GPL-2.0</project_license>
     <metadata_license>CC0-1.0</metadata_license>
     <update_contact>hub_AT_figuiere.net</update_contact>
-    <url type="homepage">http://www.zamaudio.com/?p=976</url>
+    <developer_name>Zam Audio</developer_name>
+    <url type="homepage">https://www.zamaudio.com/?p=976</url>
     <releases>
-      <release version="4.3" date="2024-05-12"/>
+      <release version="4.3" date="2024-05-12">
+        <description>
+          <ul>
+            <li>New plugin: ZamNoise noise reduction based on Gnome
+            Wave Cleaner, uses Ephriam / Malah noise suppression
+            algorithm from 1984</li>
+            <li>Tweak defaults and ranges on ZamEQ2</li>
+            <li>Make ZaMaximX2 threshold/gain controls more
+            usable</li>
+          </ul>
+        </description>
+      </release>
       <release version="4.2" date="2023-11-04">
         <description>
           <ul>
