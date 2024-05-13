@@ -39,8 +39,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zamaudio/zam-plugins.git",
-                    "tag": "4.2",
-                    "commit": "19307a52906821ad9549b9e4c1fdbd8b70bd228e",
+                    "tag": "4.3",
+                    "commit": "9e824af3f0ab22e188de21cc80b04d91f7261ee4",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$",
