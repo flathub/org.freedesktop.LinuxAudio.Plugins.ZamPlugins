@@ -30,6 +30,9 @@
     <developer_name>Zam Audio</developer_name>
     <url type="homepage">https://www.zamaudio.com/?p=976</url>
     <releases>
+      <release version="4.4" date="2025-06-05">
+         <description></description>
+      </release>
       <release version="4.3" date="2024-05-12">
         <description>
           <ul>
