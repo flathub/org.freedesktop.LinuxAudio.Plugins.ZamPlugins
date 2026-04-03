@@ -11,6 +11,7 @@
         <li>ZaMaximX2: brickwall limiter</li>
         <li>ZamAutoSat: automatic saturation</li>
         <li>ZamComp and ZamCompX2: compressor, mono and stero</li>
+        <li>(NEW in 4.5) ZamEcho: single parameter echo suitable for DJ transition</li>
         <li>ZamEQ2: 2 bands parametric equalizer</li>
         <li>ZamGEQ31: 31 band graphic equalizer</li>
         <li>ZamHeadX2: HRTF acoustic filtering</li>
@@ -31,10 +32,21 @@
     <url type="homepage">https://www.zamaudio.com/?p=976</url>
     <releases>
       <release version="4.5" date="2026-04-03">
-         <description></description>
+        <description>
+	  <p>ZamEcho added, single parameter plugin suitable for DJ
+	  transition</p>
+        </description>
       </release>
       <release version="4.4" date="2025-06-01">
-         <description/>
+        <description>
+          <ul>
+            <li>ZamTube now based on a new circuit focusing on clean,
+            warm tones with valve-like distortion at high
+            settings.</li>
+	    <li>ZamEQ2 wrong parameter fixed.</li>
+	    <li>ZamNoise fixed memory leaks.</li>
+          </ul>
+        </description>
       </release>
       <release version="4.3" date="2024-05-12">
         <description>
